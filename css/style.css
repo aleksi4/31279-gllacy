@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
   padding: 0 24px;
   box-sizing: border-box;
-  outline: solid gray;
+  /*outline: solid gray;*/
 }
 
 .sale {
