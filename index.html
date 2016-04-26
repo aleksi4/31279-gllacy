@@ -9,25 +9,27 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <div class="logo">
-          <img src="img/logo.svg" alt="Gllacy">
+        <div class="header-top">
+          <nav class="main-navigation">
+            <ul>
+              <li><img src="img/logo.svg" alt="Gllacy"></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">О Компании</a></li>
+            </ul>
+          </nav>
+          <div class="header-right">
+            <div class="user-block">
+              <a class="header-search" href="#">Поиск</a>
+              <a class="header-login" href="#">Вход</a>
+              <a class="header-cart" href="#">Корзина</a>
+            </div>
+            <p class="header-contacts">
+              С 10 до 20, ежедневно<br>
+              8 812 450-25-25
+            </p>
+          </div>
         </div>
-        <nav class="main-navigation">
-          <ul>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="header-search" href="#">Поиск</a>
-          <a class="header-login" href="#">Вход</a>
-          <a class="header-cart" href="#">Корзина</a>
-        </div>
-        <p class="header-contacts">
-          С 10 до 20, ежедневно<br>
-          8 812 450-25-25
-        </p>
         <div class="slider">
           <input type="radio" id="btn-1" checked>
           <input type="radio" id="btn-2">
@@ -45,7 +47,7 @@
                 <a href="#" class="btn">Давайте оба</a>
               </div>
               <div class="slide-item">
-                <div class="slide-title">Шоколадный пломбир и лимонный сорбет </div>
+                <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
                 <img src="img/slide-2.png" alt="" />
                 <a href="#" class="btn">Давайте оба</a>
               </div>
@@ -108,22 +110,22 @@
           магазин по продаже мороже
         </h2>
         <ul>
-          <li>
+          <li class="features-item">
             Все наше мороженое изготавливается на собственном производстве,
             с использованием современного оборудования и проверенных временем
             технологий.
           </li>
-          <li>
+          <li class="features-item">
             Для приготовления мороженого используются настоящие сливки и молоко
             высочайшего качества. Все дополнительные ингредиенты и добавки
             произведены из натурального, экологически чистого сырья.
           </li>
-          <li>
+          <li class="features-item">
             Закупка ингредиентов  производится только у проверенных фермерских
             хозяйств и компаний, с которыми нас связывает долговременное
             сотрудничество.
           </li>
-          <li>
+          <li class="features-item">
             Доставка нашего мороженого до заказчиков осуществляется в
             специальном термопаке, который не дает мороженому растаять в пути и
             позволяет ему сохранить свой превосходный вкус.
@@ -131,17 +133,21 @@
         </ul>
       </section>
       <section class="news">
-        <h3 class="news-title">Новое в нашем блоге</h3>
-        <p><a href="#">10  способов сервировки фруктовых щербетов к столу</a></p>
-      </section>
-      <section class="subscribe">
-        <p class="subscribe-desc"></p>
-        <form action="post">
-          <input type="text" value="Электронная почта">
-          <button type="submit" class="btn">Отправить</button>
-        </form>
+        <article class="news-item">
+          <h3 class="news-title">Новое в нашем блоге</h3>
+          <p><a href="#">10  способов сервировки фруктовых щербетов к столу</a></p>
+        </article>
+        <article class="subscribe-item">
+          <p class="subscribe-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+          всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+          <form action="post">
+            <input type="text" value="Электронная почта">
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+        </article>
       </section>
       <section class="contacts">
+        <img src="img/map.jpg" alt="Как нас найти">
         <div class="contacts-info">
           <p>Адрес главного офиса и офлайн магазина: <br>
           <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span> <br>
