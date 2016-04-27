@@ -10,27 +10,27 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logo.svg" alt="Gllacy">
-        </a>
+      <div class="header-top">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="index.html"><img src="img/logo.svg" alt="Gllacy"></a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О Компании</a></li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <div class="user-block">
+            <a class="header-search" href="#">Поиск</a>
+            <a class="header-login" href="#">Вход</a>
+            <a class="header-cart" href="#">Корзина</a>
+          </div>
+          <p class="header-contacts">
+            С 10 до 20, ежедневно<br>
+            8 812 450-25-25
+          </p>
+        </div>
       </div>
-      <nav class="main-navigation">
-        <ul>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О Компании</a></li>
-        </ul>
-      </nav>
-      <div class="user-block">
-        <a class="header-search" href="#">Поиск</a>
-        <a class="header-login" href="#">Вход</a>
-        <a class="header-cart" href="#">Корзина</a>
-      </div>
-      <p class="header-contacts">
-        С 10 до 20, ежедневно<br>
-        8 812 450-25-25
-      </p>
   </header>
   <main class="container">
     <nav class="breadcrumbs">
@@ -53,7 +53,12 @@
           </select>
         </label>
         <label> Цена: 100 руб. – 500 руб.
-          <input type="range" min="100" max="500">
+          <div class="price-range">
+            <span class="price-range-line"></span>
+            <span class="price-range-from"></span>
+            <span class="price-range-gap"></span>
+            <span class="price-range-to"></span>
+          </div>
         </label>
         <fieldset>
           <legend>Жирность:</legend>
@@ -176,17 +181,17 @@
           <a href="#">Сливочное с мятным сиропом</a>
         </p>
       </article>
-      <nav class="catalog-navigation">
-        <ul>
-          <li><a href="#" class="prev">&lt;</a></li>
-          <li><a href="#" class="active">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#" class="next">&gt;</a></li>
-        </ul>
-      </nav>
     </section>
+    <nav class="catalog-navigation">
+      <ul>
+        <li><a href="#" class="prev">&lt;</a></li>
+        <li><a href="#" class="active">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#" class="next">&gt;</a></li>
+      </ul>
+    </nav>
   </main>
   <footer class="main-footer">
     <div class="container">
