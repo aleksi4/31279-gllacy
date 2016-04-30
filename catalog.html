@@ -3,33 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Gllacy - Каталог</title>
-  <link rel="stylesheet" href="css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <div class="container">
-      <div class="header-top">
-        <nav class="main-navigation">
+      <div class="header-top clearfix">
+        <div class="logo left">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="Gllacy">
+          </a>
+        </div>
+        <nav class="main-navigation left">
           <ul>
-            <li><a href="index.html"><img src="img/logo.svg" alt="Gllacy"></a></li>
-            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="catalog.html" class="active">Каталог</a></li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О Компании</a></li>
           </ul>
         </nav>
-        <div class="header-right">
+        <div class="header-right right">
           <div class="user-block">
             <a class="header-search" href="#">Поиск</a>
             <a class="header-login" href="#">Вход</a>
             <a class="header-cart" href="#">Корзина</a>
           </div>
           <p class="header-contacts">
-            С 10 до 20, ежедневно<br>
-            8 812 450-25-25
+            <span class="header-contacts-time">С 10 до 20, ежедневно</span><br>
+            <span class="header-contacts-phone">8 812 450-25-25</span>
           </p>
         </div>
       </div>
+    </div>
   </header>
   <main class="container">
     <nav class="breadcrumbs">
