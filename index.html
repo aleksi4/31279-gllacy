@@ -11,12 +11,14 @@
     <input type="radio" id="btn-1" name="toggle" checked>
     <input type="radio" id="btn-2" name="toggle">
     <input type="radio" id="btn-3" name="toggle">
-    <div class="site-wrapper">
+    <div class="site-wrapper bg-preload">
       <div class="content-wrapper">
         <header class="main-header clearfix">
           <nav class="main-navigation left">
             <div class="logo">
-              <img src="img/logo.svg" alt="Gllacy">
+              <a>
+                <img src="img/logo.svg" alt="Gllacy">
+              </a>
             </div>
             <ul>
               <li><a href="catalog.html">Каталог</a></li>
@@ -26,9 +28,9 @@
           </nav>
           <div class="header-right right">
             <div class="user-block">
-              <a class="header-search" href="#">Поиск</a>
-              <a class="header-login" href="#">Вход</a>
-              <a class="header-cart" href="#">Корзина</a>
+              <a class="header-icon header-search" href="#"></a>
+              <a class="header-icon header-login" href="#">Вход</a>
+              <a class="header-icon header-cart" href="#">Пусто</a>
             </div>
             <p class="header-contacts">
               <span class="header-contacts-time">С 10 до 20, ежедневно</span><br>
@@ -76,32 +78,36 @@
           </section>
           <section class="hits">
             <article class="hit-item">
-              <img class="hit-item-pic" src="img/hit-1.png" alt="" width="255px">
-              <div class="hit-item-price">310<span class="euro-rubble">&#8381;</span>/кг</div>
+              <img class="hit-item-pic" src="img/hit-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267px" height="267px">
+              <div class="hit-item-price">310<span class="euro-rubble">&#8381;</span><span class="small">/кг</span></div>
               <p class="hit-item-description">
                 <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
               </p>
+              <a href="#" class="btn">Быстрый просмотр</a>
             </article>
             <article class="hit-item">
-              <img class="hit-item-pic" src="img/hit-2.png" alt="" width="255px">
-              <div class="hit-item-price">380<span class="euro-rubble">&#8381;</span>/кг</div>
+              <img class="hit-item-pic" src="img/hit-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267px" height="267px">
+              <div class="hit-item-price">380<span class="euro-rubble">&#8381;</span><span class="small">/кг</span></div>
               <p class="hit-item-description">
                 <a href="#">Сливочно-кофейное с кусочками шоколада</a>
               </p>
+              <a href="#" class="btn">Быстрый просмотр</a>
             </article>
             <article class="hit-item">
-              <img class="hit-item-pic" src="img/hit-3.png" alt="" width="255px">
-              <div class="hit-item-price">355<span class="euro-rubble">&#8381;</span>/кг</div>
+              <img class="hit-item-pic" src="img/hit-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267px" height="267px">
+              <div class="hit-item-price">355<span class="euro-rubble">&#8381;</span><span class="small">/кг</span></div>
               <p class="hit-item-description">
                 <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
               </p>
+              <a href="#" class="btn">Быстрый просмотр</a>
             </article>
             <article class="hit-item">
-              <img class="hit-item-pic" src="img/hit-4.png" alt="" width="255px">
-              <div class="hit-item-price">415<span class="euro-rubble">&#8381;</span>/кг</div>
+              <img class="hit-item-pic" src="img/hit-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267px" height="267px">
+              <div class="hit-item-price">415<span class="euro-rubble">&#8381;</span><span class="small">/кг</span></div>
               <p class="hit-item-description">
                 <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
               </p>
+              <a href="#" class="btn">Быстрый просмотр</a>
             </article>
           </section>
           <section class="features">
@@ -109,23 +115,23 @@
               Магазин Глейси  — это онлайн и офлайн
               магазин по продаже мороженого собственного производства на развес
             </h2>
-            <ul>
-              <li class="features-item">
+            <ul class="clearfix">
+              <li class="features-item left">
                 Все наше мороженое изготавливается на собственном производстве,
                 с использованием современного оборудования и проверенных временем
                 технологий.
               </li>
-              <li class="features-item">
-                Для приготовления мороженого используются настоящие сливки и молоко
-                высочайшего качества. Все дополнительные ингредиенты и добавки
-                произведены из натурального, экологически чистого сырья.
-              </li>
-              <li class="features-item">
+              <li class="features-item right">
                 Закупка ингредиентов  производится только у проверенных фермерских
                 хозяйств и компаний, с которыми нас связывает долговременное
                 сотрудничество.
               </li>
-              <li class="features-item">
+              <li class="features-item left">
+                Для приготовления мороженого используются настоящие сливки и молоко
+                высочайшего качества. Все дополнительные ингредиенты и добавки
+                произведены из натурального, экологически чистого сырья.
+              </li>
+              <li class="features-item right">
                 Доставка нашего мороженого до заказчиков осуществляется в
                 специальном термопаке, который не дает мороженому растаять в пути и
                 позволяет ему сохранить свой превосходный вкус.
@@ -154,9 +160,11 @@
             <div class="map-info">
               <p>
                 Адрес главного офиса и офлайн магазина: <br>
-                <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span> <br>
+                <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+              </p>
+              <p>
                 Для заказов по телефону: <br>
-                <span>8 812 450-25-25 (с 10 до 20 ежедневно)</span>
+                <b>8 812 450-25-25 (с 10 до 20 ежедневно)</b>
               </p>
               <a href="#" class="btn">Форма обратной связи</a>
             </div>
@@ -164,24 +172,24 @@
           </section>
         </main>
         <footer class="main-footer">
-            <section class="footer-social">
-              <a class="social-btn social-btn-tw" href="#">Твитер</a>
-              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            </section>
-            <nav class="footer-nav">
-              <ul>
-                <li><a href="#">Для поставщиков</a></li>
-                <li><a href="#">О производстве</a></li>
-                <li><a href="#">Наши документы</a></li>
-                <li><a href="#">Экологические стандарты</a></li>
-              </ul>
-            </nav>
-            <section class="footer-copyright">
-              <div class="copyright-title">html academy</div>
-              <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
-            </section>
+          <section class="footer-social">
+            <a class="social-btn social-btn-tw" href="#">Твитер</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          </section>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Для поставщиков</a></li>
+              <li><a href="#">Наши документы</a></li>
+              <li><a href="#">О производстве</a></li>
+              <li><a href="#">Экологические стандарты</a></li>
+            </ul>
+          </nav>
+          <section class="footer-copyright">
+            <div class="copyright-title">html academy</div>
+            <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
+          </section>
         </footer>
       </div>
     </div>
