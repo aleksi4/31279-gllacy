@@ -39,30 +39,29 @@
         <nav class="breadcrumbs">
           <ul>
             <li><a href="index.html">Главная</a></li>
-            <li>Каталог</li>
+            <li><a>Каталог</a></li>
             <li>Сливочное</li>
           </ul>
         </nav>
         <h1>Сливочное мороженное</h1>
         <section class="filters">
-          <form action="">
+          <form action="post">
             <label>
               Сортировка: <br>
-              <select name="sort" id="">
+              <select name="sort" id="sort">
                 <option value="">по популярности</option>
                 <option value="">сначала недорогие</option>
                 <option value="">сначала дорогие</option>
                 <option value="">по жирности</option>
               </select>
             </label>
-            <label> Цена: 100 руб. – 500 руб.
-              <div class="price-range">
-                <span class="price-range-line"></span>
-                <span class="price-range-from"></span>
-                <span class="price-range-gap"></span>
-                <span class="price-range-to"></span>
-              </div>
-            </label>
+            <div class="range-title">Цена: 100 руб. – 500 руб.</div>
+            <div class="price-range">
+              <span class="price-range-line"></span>
+              <span class="price-range-from"></span>
+              <span class="price-range-gap"></span>
+              <span class="price-range-to"></span>
+            </div>
             <fieldset>
               <legend>Жирность:</legend>
               <label>
@@ -197,23 +196,22 @@
             <a href="#" class="btn">Быстрый просмотр</a>
           </article>
         </section>
-        <nav class="catalog-navigation clearfix">
-          <ul class="right">
-            <li><a href="#" class="prev">&lt;</a></li>
-            <li><a href="#" class="active">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#" class="next">&gt;</a></li>
-          </ul>
-        </nav>
+        <div class="catalog-paginator">
+            <a href="#prev">&lt</a>
+            <a href="#1" class="active">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a href="#4">4</a>
+            <a href="#5">5</a>
+            <a href="#next">&gt</a>
+        </div>
       </main>
       <footer class="main-footer">
         <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Твитер</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-tw" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-vk" href="#"></a>
         </section>
         <nav class="footer-nav">
           <ul>
@@ -224,7 +222,9 @@
           </ul>
         </nav>
         <section class="footer-copyright">
-          <div class="copyright-title">html academy</div>
+          <div class="copyright-logo">
+            <img src="img/logo-html-academy.svg" alt="html academy" width="108" height="37">
+          </div>
           <p>Сделано в <a href="#">HTML Academy</a> © 2016</p>
         </section>
       </footer>
