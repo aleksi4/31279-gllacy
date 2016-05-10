@@ -10,7 +10,7 @@
 <body>
   <div class="site-wrapper">
     <div class="content-wrapper">
-      <header class="main-header clearfix">
+      <header class="main-header clearfix inner">
         <nav class="main-navigation left">
           <div class="logo">
             <a href="index.html">
@@ -43,57 +43,63 @@
             <li>Сливочное</li>
           </ul>
         </nav>
-        <h1>Сливочное мороженное</h1>
+        <h1 class="catalog-title">Сливочное мороженное</h1>
         <section class="filters">
           <form action="post">
             <label>
-              Сортировка: <br>
-              <select name="sort" id="sort">
+              <div class="filter-title">Сортировка:</div>
+              <select name="sort" id="sort" class="filter-sort">
                 <option value="">по популярности</option>
                 <option value="">сначала недорогие</option>
                 <option value="">сначала дорогие</option>
                 <option value="">по жирности</option>
               </select>
             </label>
-            <div class="range-title">Цена: 100 руб. – 500 руб.</div>
-            <div class="price-range">
-              <span class="price-range-line"></span>
-              <span class="price-range-from"></span>
-              <span class="price-range-gap"></span>
-              <span class="price-range-to"></span>
+            <div class="range">
+              <div class="filter-title">Цена: 100 руб. – 500 руб.</div>
+              <div class="price-range">
+                <div class="price-range-line"></div>
+                <div class="price-range-from"></div>
+                <div class="price-range-gap"></div>
+                <div class="price-range-to"></div>
+              </div>
             </div>
             <fieldset>
-              <legend>Жирность:</legend>
-              <label>
-                <input type="radio" name="fatness" value="" checked> 0%
-              </label>
-              <label>
-                <input type="radio" name="fatness" value=""> до 10%
-              </label>
-              <label>
-                <input type="radio" name="fatness" value=""> до 30%
-              </label>
-              <label>
-                <input type="radio" name="fatness" value=""> выше 30%
-              </label>
+              <legend class="filter-title fatness-title">Жирность:</legend>
+              <div class="container">
+                <label>
+                  <input type="radio" name="fatness" value="" checked> 0%
+                </label>
+                <label>
+                  <input type="radio" name="fatness" value=""> до 10%
+                </label>
+                <label>
+                  <input type="radio" name="fatness" value=""> до 30%
+                </label>
+                <label>
+                  <input type="radio" name="fatness" value=""> выше 30%
+                </label>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Наполнители:</legend>
-              <label>
-                <input type="checkbox" checked> шоколадные
-              </label>
-              <label>
-                <input type="checkbox" checked> сахарные присыпки
-              </label>
-              <label>
-                <input type="checkbox"> фрукты
-              </label>
-              <label>
-                <input type="checkbox"> сиропы
-              </label>
-              <label>
-                <input type="checkbox"> джемы
-              </label>
+              <div class="container">
+                <label>
+                  <input type="checkbox" checked> шоколадные
+                </label>
+                <label>
+                  <input type="checkbox" checked> сахарные присыпки
+                </label>
+                <label>
+                  <input type="checkbox"> фрукты
+                </label>
+                <label>
+                  <input type="checkbox"> сиропы
+                </label>
+                <label>
+                  <input type="checkbox"> джемы
+                </label>
+              </div>
             </fieldset>
             <button type="submit">Применить</button>
           </form>
