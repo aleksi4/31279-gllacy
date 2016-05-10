@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner">
   <div class="site-wrapper">
     <div class="content-wrapper">
-      <header class="main-header clearfix inner">
+      <header class="main-header clearfix">
         <nav class="main-navigation left">
           <div class="logo">
             <a href="index.html">
@@ -64,41 +64,32 @@
                 <div class="price-range-to"></div>
               </div>
             </div>
-            <fieldset>
-              <legend class="filter-title fatness-title">Жирность:</legend>
+            <fieldset class="fatness">
+              <legend class="filter-title">Жирность:</legend>
+                <input type="radio" id="ftn-1" name="fatness" value="ftn-1" checked>
+                <input type="radio" id="ftn-2" name="fatness" value="">
+                <input type="radio" id="ftn-3" name="fatness" value="">
+                <input type="radio" id="ftn-4" name="fatness" value="">
               <div class="container">
-                <label>
-                  <input type="radio" name="fatness" value="" checked> 0%
-                </label>
-                <label>
-                  <input type="radio" name="fatness" value=""> до 10%
-                </label>
-                <label>
-                  <input type="radio" name="fatness" value=""> до 30%
-                </label>
-                <label>
-                  <input type="radio" name="fatness" value=""> выше 30%
-                </label>
+                <label for="ftn-1">0%</label>
+                <label for="ftn-2">до 10%</label>
+                <label for="ftn-3">до 30%</label>
+                <label for="ftn-4">выше 30%</label>
               </div>
             </fieldset>
-            <fieldset>
-              <legend>Наполнители:</legend>
+            <fieldset class="fillers">
+              <legend class="filter-title">Наполнители:</legend>
+                <input type="checkbox" id="fill-1" checked>
+                <input type="checkbox" id="fill-2" checked>
+                <input type="checkbox" id="fill-3">
+                <input type="checkbox" id="fill-4">
+                <input type="checkbox" id="fill-5">
               <div class="container">
-                <label>
-                  <input type="checkbox" checked> шоколадные
-                </label>
-                <label>
-                  <input type="checkbox" checked> сахарные присыпки
-                </label>
-                <label>
-                  <input type="checkbox"> фрукты
-                </label>
-                <label>
-                  <input type="checkbox"> сиропы
-                </label>
-                <label>
-                  <input type="checkbox"> джемы
-                </label>
+                <label for="fill-1">шоколадные</label>
+                <label for="fill-2">сахарные присыпки</label>
+                <label for="fill-3">фрукты</label>
+                <label for="fill-4">сиропы</label>
+                <label for="fill-5">джемы</label>
               </div>
             </fieldset>
             <button type="submit">Применить</button>
