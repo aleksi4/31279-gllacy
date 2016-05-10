@@ -112,16 +112,22 @@ h2 {
 
 a {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 a:hover, a:active {
   color: #ffbc9e;
-  text-decoration: underline;
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .main-navigation {
   margin-top: 22px;
+
+}
+
+.underline {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .main-navigation ul {
@@ -144,7 +150,7 @@ a:hover, a:active {
   font-size: 16px;
   line-height: 18px;
   padding: 7px 14px;
-  text-decoration: underline;
+  text-decoration: none;
   border-radius: 20px;
 }
 
@@ -189,6 +195,10 @@ a:hover, a:active {
 
 .user-block a {
   text-decoration: none;
+}
+
+.main-header a {
+  border: none;
 }
 
 .header-icon {
@@ -404,6 +414,10 @@ a:hover, a:active {
   z-index: 5;
 }
 
+.hit-item:hover .hit-item-description a, .catalog-item:hover .catalog-item-description a {
+  border: none;
+}
+
 .hit-item .btn, .catalog-item .btn {
   font-size: 18px;
   line-height: 24px;
@@ -431,7 +445,6 @@ a:hover, a:active {
 
 .hit-item-description, .catalog-item-description {
   text-align: center;
-  text-decoration: underline;
   font-size: 16px;
   line-height: 22px;
   margin-top: 20px;
@@ -591,7 +604,6 @@ a:hover, a:active {
 }
 
 .filter-title {
-  /*display: block;*/
   padding: 15px;
   padding-bottom: 6px;
 }
@@ -607,7 +619,6 @@ a:hover, a:active {
   border-radius: 20px;
   color: #fff;
   margin-right: 16px;
-  /*margin-top: 10px;*/
 }
 
 .filter-sort * {
@@ -624,7 +635,6 @@ a:hover, a:active {
 }
 
 .price-range-line {
-  /*width: 200px;*/
   position: absolute;
   height: 4px;
   background: rgba(255, 255, 255, 0.5);
@@ -661,9 +671,6 @@ a:hover, a:active {
 }
 
 fieldset {
-  /*background: rgba(248, 247, 244, 0.2);
-  padding: 7px 40px 7px 15px;
-  border-radius: 20px;*/
   border: none;
 }
 
@@ -750,9 +757,9 @@ fieldset {
 }
 
 .catalog-paginator a {
-  text-decoration: none;
   padding: 3px 8px;
   border-radius: 50%;
+  border: none;
 }
 
 .catalog-paginator a.active {
@@ -775,7 +782,6 @@ fieldset {
   font-weight: normal;
   line-height: 18px;
   display: inline-block;
-  text-decoration: underline;
   padding-left: 40px;
 }
 
@@ -831,5 +837,4 @@ fieldset {
 
 .footer-copyright a {
   font-weight: normal;
-  text-decoration: underline;
 }
