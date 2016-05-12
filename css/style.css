@@ -340,7 +340,6 @@ h1.catalog-title {
 }
 
 .login-form form {
-  /*width: 270px;*/
   padding: 20px 15px;
 
   background: #f8f7f4;
@@ -397,6 +396,13 @@ h1.catalog-title {
   background: #f8f7f4 url("../img/icon-search-dark.svg") center center no-repeat;
 }
 
+.header-login {
+  padding: 4px 15px 4px 45px;
+  background-image: url("../img/icon-login.svg");
+  background-position: 15px center;
+  background-repeat: no-repeat;
+}
+
 .header-login:hover {
   color: #323232;
   background: #f8f7f4 url("../img/icon-login-dark.svg") 15px center no-repeat;
@@ -415,6 +421,8 @@ h1.catalog-title {
 }
 
 .header-cart-full {
+  padding-right: 20px;
+
   font-weight: 500;
 
   color: #323232;
@@ -428,19 +436,78 @@ h1.catalog-title {
   background-image: url("../img/icon-cart-full.svg");
 }
 
+.cart-form-container {
+  position: absolute;
+  right: 0;
+  top: 32px;
+  z-index: 20;
+
+  display: none;
+
+  padding-top: 5px;
+}
+
+.cart-form {
+  width: 540px;
+  padding: 20px 15px;
+
+  color: #323232;
+  background: #f8f7f4;
+  border-radius: 6px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cart-form-item * {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #323232;
+
+}
+
+.cart-form-item {
+  padding-bottom: 20px;
+  padding-left: 20px;
+
+  background: url("../img/x.svg") 5px 10px no-repeat;
+}
+
+.cart-form-item-title {
+  width: 220px;
+}
+
+.price-weight {
+  color: #999999;
+}
+
+.cart-form-sum {
+  padding: 15px 0;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: right;
+
+  border-top: 1px solid #cacac7;
+}
+
+.cart-form .btn {
+  float: right;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
 .user-block > li:hover .search-form,
-.user-block > li:hover .login-form {
+.user-block > li:hover .login-form,
+.user-block > li:hover .cart-form-container {
   display: block;
 }
-
-.header-login {
-  padding: 4px 15px 4px 45px;
-  background-image: url("../img/icon-login.svg");
-  background-position: 15px center;
-  background-repeat: no-repeat;
-}
-
-
 
 .header-contacts {
   text-align: right;
