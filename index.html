@@ -63,7 +63,24 @@
 
               <li>
                 <a class="header-icon header-cart" href="#">Пусто</a>
-                
+                <div class="cart-form-container">
+                  <div class="cart-form clearfix">
+                    <div class="cart-form-item">
+                      <img src="img/catalog-photo-1.png" width="30" alt="Пломбир с апельсиновым джемом">
+                      <div class="cart-form-item-title">Пломбир с апельсиновым джемом</div>
+                      <div class="cart-form-item-weight">1,5 кг &nbsp; х <span class="price-weight">200 руб.</span></div>
+                      <div class="cart-form-item-price">300 руб.</div>
+                    </div>
+                    <div class="cart-form-item">
+                      <img src="img/catalog-photo-2.png" width="30" alt="Пломбир с апельсиновым джемом">
+                      <div class="cart-form-item-title">Клубничный пломбир с присыпкой из белого шоколада</div>
+                      <div class="cart-form-item-weight">1,5 кг &nbsp; х <span class="price-weight">300 руб.</span></div>
+                      <div class="cart-form-item-price">450 руб.</div>
+                    </div>
+                    <div class="cart-form-sum">Итого: 750 руб.</div>
+                    <a href="#" class="btn">Оформить заказ</a>
+                  </div>
+                </div>
               </li>
             </ul>
             <p class="header-contacts">
@@ -229,5 +246,16 @@
         </footer>
       </div>
     </div>
+    <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <h2 class="modal-content-title">Мы обязательно вам ответим!</h2>
+      <form action="post" class="clearfix">
+        <input type="text" name="login" placeholder="Как вас зовут?">
+        <input type="text" name="mail" placeholder="Ваша почта для ответа?">
+        <textarea name="any-text" rows="8" cols="40">Напишите что-нибудь...</textarea>
+        <button type="submit" name="button" class="btn right">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-overlay"></div>
   </body>
 </html>
