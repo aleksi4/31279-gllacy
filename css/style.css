@@ -11,6 +11,20 @@ body > input[type="radio"] {
   display: none;
 }
 
+.search-form input[type="text"]:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
+textarea {
+  border: 2px solid #c7c6c5;
+}
+
+.search-form input[type="text"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea {
+  border: 2px solid #8fbdec;
+}
+
 .bg-preload {
   background-image: url("../img/slide-3.png");
 }
@@ -621,6 +635,7 @@ h1.catalog-title {
 }
 
 .inner .site-wrapper {
+  background: #849d8f -webkit-linear-gradient(#9db1a5, #849d8f);
   background: #849d8f linear-gradient(#9db1a5, #849d8f);
 }
 
@@ -1258,6 +1273,7 @@ fieldset {
   font-size: 0;
 
   background: url("../img/x-big.svg") center center no-repeat;
+  background-size: cover;
   border: 0;
   outline: 0;
   cursor: pointer;
@@ -1279,6 +1295,16 @@ fieldset {
 
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+}
+
+.modal-content input[type="text"]:hover,
+.modal-content textarea:hover {
+  border: 2px solid #c7c6c5;
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content textarea:focus {
+  border: 2px solid #8fbdec;
 }
 
 .modal-content textarea {
