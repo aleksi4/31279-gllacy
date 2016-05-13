@@ -99,13 +99,16 @@ a:hover, a:active {
 }
 
 .btn {
-  color: #fff;
   display: inline-block;
   vertical-align: top;
-  border-radius: 20px;
   padding: 10px 20px;
+  height: 44px;
+  box-sizing: border-box;
+
+  color: #fff;
   text-decoration: none;
   border: none;
+  border-radius: 20px;
   background: #f26843;
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
@@ -296,6 +299,7 @@ h1.catalog-title {
   position: relative;
 
   display: inline-block;
+  vertical-align: top;
 
   font-size: 14px;
   line-height: 24px;
@@ -327,7 +331,9 @@ h1.catalog-title {
 }
 
 .search-form input[type="text"] {
-  width: 310px;
+  width: 313px;
+  height: 46px;
+  box-sizing: border-box;
   padding: 10px;
 
   font-size: 14px;
@@ -362,7 +368,9 @@ h1.catalog-title {
 }
 
 .login-form input {
-  width: 240px;
+  width: 243px;
+  height: 46px;
+  box-sizing: border-box;
   margin-bottom: 20px;
   padding: 10px;
 
@@ -566,6 +574,7 @@ h1.catalog-title {
 }
 
 .slide-btn {
+  height: 65px;
   padding: 12px 44px;
 
   font-weight: 600;
@@ -1192,23 +1201,24 @@ fieldset {
 
 .footer-nav li:first-child {
   font-weight: bold;
-  background: url("../img/icon-heart.svg") 20px center no-repeat;
+  background: url("../img/icon-heart.png") 20px center no-repeat;
 }
 
 .footer-social {
   font-size: 0;
-  width: 200px;
 }
 
 .social-btn {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
+
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.5);
   opacity: 0.8;
   margin-right: 10px;
-  background-position: 50% 50%;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1252,6 +1262,7 @@ fieldset {
   left: 50%;
   z-index: 50;
 
+  display: none;
   width: 430px;
   margin-left: -240px;
   padding: 20px 25px;
@@ -1290,6 +1301,8 @@ fieldset {
 
 .modal-content input[type="text"] {
   width: 269px;
+  height: 46px;
+  box-sizing: border-box;
   margin-bottom: 20px;
   padding: 15px 20px;
 
@@ -1308,7 +1321,9 @@ fieldset {
 }
 
 .modal-content textarea {
-  width: 390px;
+  width: 432px;
+  height: 176px;
+  box-sizing: border-box;
   margin-bottom: 20px;
   padding: 15px 20px;
 
@@ -1323,8 +1338,14 @@ fieldset {
   left: 0;
   z-index: 47;
 
+  display: none;
   width: 100%;
   height: 100%;
 
   background: rgba(199, 198, 197, 0.3);
+}
+
+.modal-content-show,
+.modal-overlay-show {
+  display: block;
 }
