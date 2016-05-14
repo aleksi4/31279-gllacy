@@ -1001,10 +1001,6 @@ h1.catalog-title {
   margin-left: 0;
 }
 
-.fillers label:last-child::before {
-  /*margin-right: 0;*/
-}
-
 .fillers label:hover::before {
   border: 2px solid #fff;
 }
