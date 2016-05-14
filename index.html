@@ -47,7 +47,6 @@
                   </form>
                 </div>
               </li>
-
               <li>
                 <a class="header-icon header-login" href="#">Вход</a>
                 <div class="login-form">
@@ -60,7 +59,6 @@
                   </form>
                 </div>
               </li>
-
               <li>
                 <a class="header-icon header-cart" href="#">Пусто</a>
                 <div class="cart-form-container">
@@ -257,28 +255,6 @@
       </form>
     </div>
     <div class="modal-overlay"></div>
-    <script>
-      var form = document.querySelector(".form-contacts");
-
-      var popup = document.querySelector(".modal-content");
-      var close = popup.querySelector(".modal-content-close");
-
-      var overlay = document.querySelector(".modal-overlay");
-
-      var login = popup.querySelector("[name=login]");
-
-      form.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("modal-content-show");
-        overlay.classList.add("modal-overlay-show");
-        login.focus();
-      });
-
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("modal-content-show");
-        overlay.classList.remove("modal-overlay-show");
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
