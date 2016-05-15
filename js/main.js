@@ -17,3 +17,12 @@ close.addEventListener("click", function(event) {
   popup.classList.remove("modal-content-show");
   overlay.classList.remove("modal-overlay-show");
 });
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (popup.classList.contains("modal-content-show")) {
+      popup.classList.remove("modal-content-show");
+      overlay.classList.remove("modal-overlay-show");
+    }
+  }
+});
