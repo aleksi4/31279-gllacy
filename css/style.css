@@ -2,36 +2,14 @@ body {
   font-size: 16px;
   line-height: 18px;
   font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+
   color: #fff;
   background-color: #849d8f;
-  font-weight: 400;
 }
 
 body > input[type="radio"] {
   display: none;
-}
-
-.search-form input[type="text"]:hover,
-input[type="text"]:hover,
-input[type="password"]:hover,
-textarea {
-  border: 2px solid #c7c6c5;
-}
-
-.search-form input[type="text"]:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-textarea {
-  border: 2px solid #8fbdec;
-}
-
-.search-form input[type="text"]:valid,
-input[type="text"]:valid,
-input[type="password"]:valid,
-textarea:valid {
-  font-weight: bold;
-
-  color: #323232;
 }
 
 .bg-preload {
@@ -228,6 +206,29 @@ h1.catalog-title {
   padding: 0;
 }
 
+.search-form input[type="text"]:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
+textarea {
+  border: 2px solid #c7c6c5;
+}
+
+.search-form input[type="text"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea {
+  border: 2px solid #8fbdec;
+}
+
+.search-form input[type="text"]:valid,
+input[type="text"]:valid,
+input[type="password"]:valid,
+textarea:valid {
+  font-weight: bold;
+
+  color: #323232;
+}
+
 .sub-menu {
   position: absolute;
   z-index: 20;
@@ -347,6 +348,7 @@ h1.catalog-title {
 
   font-size: 14px;
   line-height: 24px;
+  font-weight: 400;
 
   color: #999999;
   border: 1px solid #999999;
@@ -357,7 +359,6 @@ h1.catalog-title {
   font-weight: bold;
 
   color: #323232;
-
 }
 
 .search-form button[type="submit"] {
@@ -383,6 +384,12 @@ h1.catalog-title {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
+.login-form input:valid {
+  font-weight: bold;
+
+  color: #323232;
+}
+
 .login-form input {
   width: 243px;
   height: 46px;
@@ -390,15 +397,11 @@ h1.catalog-title {
   margin-bottom: 20px;
   padding: 10px;
 
+  font-weight: normal;
+
   color: #999999;
   border: 1px solid #999999;
   border-radius: 5px;
-}
-
-.login-form input:valid {
-  font-weight: bold;
-
-  color: #323232;
 }
 
 .login-form button {
@@ -510,7 +513,6 @@ h1.catalog-title {
   line-height: 16px;
 
   color: #323232;
-
 }
 
 .cart-form-item {
@@ -693,6 +695,7 @@ h1.catalog-title {
 
 .sale-item p {
   margin-top: 14px;
+
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
@@ -702,6 +705,7 @@ h1.catalog-title {
   position: absolute;
   bottom: 25px;
   right: 20px;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -727,21 +731,25 @@ h1.catalog-title {
 }
 
 .hit-item, .catalog-item {
-  width: 267px;
+  position: relative;
+
   display: inline-block;
+  width: 267px;
+  padding: 13px;
+
   vertical-align: top;
   font-size: 16px;
-  position: relative;
-  padding: 13px;
   border-radius: 5px;
 }
 
 .hit-item:hover, .catalog-item:hover {
-  background: rgba(255, 255, 255, 0.2);
+  z-index: 5;
+
   padding-bottom: 65px;
   margin-bottom: -65px;
+
+  background: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  z-index: 5;
 }
 
 .hit-item:hover .hit-item-description a, .catalog-item:hover .catalog-item-description a {
@@ -749,12 +757,14 @@ h1.catalog-title {
 }
 
 .hit-item .btn, .catalog-item .btn {
+  position: absolute;
+  left: 40px;
+
+  display: none;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  position: absolute;
-  display: none;
-  left: 40px;
 }
 
 .hit-item:hover .btn, .catalog-item:hover .btn {
@@ -762,11 +772,13 @@ h1.catalog-title {
 }
 
 .hit-item-price, .catalog-item-price {
+  margin-top: -60px;
+
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
+
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
-  margin-top: -60px;
 }
 
 .hit-item-price .small, .catalog-item-price .small {
@@ -787,6 +799,7 @@ h1.catalog-title {
 
 .breadcrumbs li {
   display: inline-block;
+
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
@@ -795,36 +808,41 @@ h1.catalog-title {
 .breadcrumbs li:not(:last-child)::after {
   content: "\00BB";
   padding: 0 6px;
+
   text-decoration: none;
 }
 
 .features {
+  padding: 20px 20px 10px 20px;
+  margin-bottom: 35px;
+
   background: #ecdbb9 url("../img/texture.png");
   color: #000;
-  padding: 20px 20px 10px 20px;
   border-radius: 15px;
-  margin-bottom: 35px;
 }
 
 .features-title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-  margin-top: 5px;
-  margin-bottom: 10px;
 }
 
 .features ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .features-item {
   width: 475px;
+  padding: 10px 10px 15px 55px;
+
   font-size: 16px;
   line-height: 22px;
-  padding: 10px 10px 15px 55px;
 }
 
 .features-item:first-child {
@@ -850,15 +868,17 @@ h1.catalog-title {
 .new-item {
   width: 520px;
   height: 170px;
-  background: #fff;
-  color: #323232;
-  border-radius: 15px;
   padding: 25px 20px;
+
+  color: #323232;
+  background: #fff;
+  border-radius: 15px;
   background-image: url("../img/news-photo.png");
 }
 
 .new-title {
   margin: 0;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -870,32 +890,38 @@ h1.catalog-title {
 }
 
 .new-item a {
-  color: #323232;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   text-decoration: underline;
+
+  color: #323232;
 }
 
 .subscribe-item {
+  position: relative;
+
   width: 520px;
   height: 180px;
+  padding: 20px;
+
   background: url("../img/subscribe-bg.png");
   color: #5a5a5a;
-  padding: 20px;
-  position: relative;
 }
 
 .subscribe-item input {
   position: absolute;
   bottom: 36px;
-  padding: 10px 15px;
-  border-radius: 5px;
+
   width: 340px;
-  border: 2px solid rgba(178, 178, 178, 0.5);
+  padding: 10px 15px;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+
+  border-radius: 5px;
+  border: 2px solid rgba(178, 178, 178, 0.5);
   color: #999999;
 }
 
@@ -906,12 +932,13 @@ h1.catalog-title {
 }
 
 .subscribe-item .btn {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 24px;
   position: absolute;
   right: 25px;
   bottom: 40px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
 }
 
 .subscribe-desc {
@@ -921,11 +948,13 @@ h1.catalog-title {
 }
 
 .filters {
-  color: #fff;
+  margin-bottom: 25px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  margin-bottom: 25px;
+
+  color: #fff;
 }
 
 .filters form {
@@ -952,16 +981,18 @@ h1.catalog-title {
 }
 
 .fatness label::before {
-  display: inline-block;
-  vertical-align: middle;
   content: "";
-  box-sizing: border-box;
+
+  display: inline-block;
   width: 20px;
   height: 20px;
-  border: 1px solid #fff;
-  border-radius: 50%;
   margin-right: 10px;
   margin-left: 15px;
+
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
 
 .fatness label:first-child::before {
@@ -987,14 +1018,15 @@ h1.catalog-title {
   content: "";
 
   display: inline-block;
-  border-radius: 5px;
-  border: 1px solid #fff;
   width: 20px;
   height: 20px;
-  vertical-align: middle;
-  box-sizing: border-box;
   margin-left: 15px;
   margin-right: 15px;
+
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #fff;
 }
 
 .fillers label:first-child::before {
@@ -1018,12 +1050,13 @@ h1.catalog-title {
 }
 
 .filter-sort {
-  background: rgba(248, 247, 244, 0.2);
+  margin-right: 16px;
   padding: 7px 15px 8px 15px;
+
+  color: #fff;
+  background: rgba(248, 247, 244, 0.2);
   border: none;
   border-radius: 20px;
-  color: #fff;
-  margin-right: 16px;
 }
 
 .filter-sort:hover {
@@ -1043,6 +1076,7 @@ h1.catalog-title {
   position: relative;
   width: 218px;
   height: 36px;
+
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.2);
   cursor: pointer;
@@ -1050,30 +1084,36 @@ h1.catalog-title {
 
 .price-range-line {
   position: absolute;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.5);
   left: 15px;
   right: 15px;
   top: 16px;
+
+  height: 4px;
+
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .price-range-from {
   position: absolute;
-  height: 4px;
-  background: rgba(255, 255, 255, 1);
   left: 35px;
   right: 55px;
   top: 16px;
+
+  height: 4px;
+
+  background: rgba(255, 255, 255, 1);
 }
 
 .price-range-gap, .price-range-to {
   position: absolute;
+  top: 8px;
+
+  width: 20px;
+  height: 20px;
+
   background: #fff;
   border-radius: 50%;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
-  width: 20px;
-  height: 20px;
-  top: 8px;
 }
 
 .price-range-gap {
@@ -1085,30 +1125,34 @@ h1.catalog-title {
 }
 
 fieldset {
-  border: none;
   margin: 0;
   padding: 0;
+
+  border: none;
 }
 
 .container {
-  background: rgba(248, 247, 244, 0.2);
   padding: 8px 15px 8px 15px;
+
+  background: rgba(248, 247, 244, 0.2);
   border-radius: 20px;
 }
 
 .filters button {
-  margin-top: 39px;
-  padding: 7px 30px;
-  background: rgba(248, 247, 244, 0.2);
-  border-radius: 20px;
-  border: solid 2px #fff;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: inherit;
   display: inline-block;
   height: 36px;
   margin-left: 15px;
+  margin-top: 39px;
+  padding: 7px 30px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  background: rgba(248, 247, 244, 0.2);
+  border-radius: 20px;
+  border: solid 2px #fff;
+  color: inherit;
 }
 
 .filters button:hover {
@@ -1125,6 +1169,7 @@ fieldset {
 
 .map {
   position: relative;
+
   margin: 0 -27px;
 }
 
@@ -1132,10 +1177,12 @@ fieldset {
   position: absolute;
   right: 27px;
   bottom: 65px;
+
   width: 240px;
+  padding: 15px 30px 30px 25px;
+
   background: #fff;
   color: #323232;
-  padding: 15px 30px 30px 25px;
   border-radius: 15px;
 
   font-size: 14px;
@@ -1155,10 +1202,11 @@ fieldset {
 }
 
 .map-info a {
+  margin-top: 12px;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
-  margin-top: 12px;
 }
 
 .main-footer {
@@ -1174,10 +1222,12 @@ fieldset {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+
+  height: 110px;
+
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
-  height: 110px;
 }
 
 .main-footer ul {
@@ -1186,16 +1236,19 @@ fieldset {
 
 .catalog-paginator {
   width: 100%;
+  padding: 20px 0 30px 0;
+
   text-align: right;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+
   border-bottom: solid rgba(254, 254, 254, 0.3) 1px;
-  padding: 20px 0 30px 0;
 }
 
 .catalog-paginator a {
   padding: 3px 8px;
+
   border-radius: 50%;
   border: none;
 }
@@ -1212,15 +1265,17 @@ fieldset {
 
 .footer-nav {
   width: 400px;
+
   font-size: 0;
 }
 
 .footer-nav li {
+  display: inline-block;
+  padding-left: 40px;
+
   font-size: 13px;
   font-weight: normal;
   line-height: 18px;
-  display: inline-block;
-  padding-left: 40px;
 }
 
 .footer-nav li:first-child {
@@ -1236,12 +1291,12 @@ fieldset {
   display: inline-block;
   width: 38px;
   height: 38px;
+  margin-right: 10px;
   box-sizing: border-box;
 
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.5);
   opacity: 0.8;
-  margin-right: 10px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
