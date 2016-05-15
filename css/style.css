@@ -195,10 +195,10 @@ h1.catalog-title {
 .logo {
   display: inline-block;
   vertical-align: top;
-
   margin-top: -12px;
   margin-right: 12px;
   margin-left: -5px;
+
   font-size: 0;
 }
 
@@ -206,27 +206,57 @@ h1.catalog-title {
   padding: 0;
 }
 
-.search-form input[type="text"]:hover,
-input[type="text"]:hover,
-input[type="password"]:hover,
+input[type="text"],
+input[type="password"],
 textarea {
-  border: 2px solid #c7c6c5;
-}
+  height: 46px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 10px 15px;
 
-.search-form input[type="text"]:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-textarea {
-  border: 2px solid #8fbdec;
-}
-
-.search-form input[type="text"]:valid,
-input[type="text"]:valid,
-input[type="password"]:valid,
-textarea:valid {
+  font-size: 14px;
+  line-height: 24px;
   font-weight: bold;
 
   color: #323232;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+textarea:hover {
+  border: 2px solid #c7c6c5;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border: 2px solid #8fbdec;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-weight: normal;
+
+  color: #999999;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-weight: normal;
+
+  color: #999999;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder  {
+  font-weight: normal;
+
+  color: #999999;
 }
 
 .sub-menu {
@@ -342,23 +372,7 @@ textarea:valid {
 
 .search-form input[type="text"] {
   width: 313px;
-  height: 46px;
-  box-sizing: border-box;
-  padding: 10px;
-
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #999999;
-  border: 1px solid #999999;
-  border-radius: 5px;
-}
-
-.search-form input[type="text"]:valid {
-  font-weight: bold;
-
-  color: #323232;
+  margin-bottom: 0;
 }
 
 .search-form button[type="submit"] {
@@ -384,24 +398,8 @@ textarea:valid {
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.login-form input:valid {
-  font-weight: bold;
-
-  color: #323232;
-}
-
 .login-form input {
   width: 243px;
-  height: 46px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: 10px;
-
-  font-weight: normal;
-
-  color: #999999;
-  border: 1px solid #999999;
-  border-radius: 5px;
 }
 
 .login-form button {
@@ -914,21 +912,7 @@ textarea:valid {
   bottom: 36px;
 
   width: 340px;
-  padding: 10px 15px;
-
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  border-radius: 5px;
-  border: 2px solid rgba(178, 178, 178, 0.5);
-  color: #999999;
-}
-
-.subscribe-item input:valid {
-  font-weight: bold;
-
-  color: #323232;
+  margin-bottom: 0;
 }
 
 .subscribe-item .btn {
@@ -1053,19 +1037,21 @@ textarea:valid {
   margin-right: 16px;
   padding: 7px 15px 8px 15px;
 
-  color: #fff;
+  color: #ffffff;
   background: rgba(248, 247, 244, 0.2);
   border: none;
   border-radius: 20px;
 }
 
 .filter-sort:hover {
-  background: #fff;
+  background: #ffffff;
   color: #323232;
 }
 
 .filter-sort * {
-  color: #000;
+  font-weight: normal;
+
+  color: #000000;
 }
 
 .range {
@@ -1188,7 +1174,7 @@ fieldset {
   width: 240px;
   padding: 15px 30px 30px 25px;
 
-  background: #fff;
+  background: #ffffff;
   color: #323232;
   border-radius: 15px;
 
@@ -1261,12 +1247,12 @@ fieldset {
 }
 
 .catalog-paginator a.active {
-  background: #fff;
-  color: #000;
+  background: #ffffff;
+  color: #000000;
 }
 
 .catalog-paginator a:hover {
-  color: #fff;
+  color: #ffffff;
   background: rgba(255, 255, 255, 0.2);
 }
 
@@ -1353,7 +1339,7 @@ fieldset {
   margin-left: -240px;
   padding: 20px 25px;
 
-  color: #000;
+  color: #000000;
   background: #f8f7f4;
   border-radius: 10px;
 }
@@ -1387,47 +1373,11 @@ fieldset {
 
 .modal-content input[type="text"] {
   width: 269px;
-  height: 46px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: 15px 20px;
-
-  border: 1px solid #d3d3d2;
-  border-radius: 5px;
-}
-
-.modal-content input[type="text"]:valid {
-  font-weight: bold;
-
-  color: #323232;
-}
-
-.modal-content input[type="text"]:hover,
-.modal-content textarea:hover {
-  border: 2px solid #c7c6c5;
-}
-
-.modal-content input[type="text"]:focus,
-.modal-content textarea:focus {
-  border: 2px solid #8fbdec;
 }
 
 .modal-content textarea {
   width: 432px;
   height: 176px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: 15px 20px;
-
-  color: #999999;
-  border: 1px solid #d3d3d2;
-  border-radius: 5px;
-}
-
-.modal-content textarea:valid {
-  font-weight: bold;
-
-  color: #323232;
 }
 
 .modal-overlay {
