@@ -163,10 +163,13 @@ h1.catalog-title {
 
 .main-navigation > ul a {
   display: inline-block;
+  vertical-align: top;
+  padding: 7px 14px;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  padding: 7px 14px;
+
   text-decoration: none;
   border-radius: 20px;
 }
@@ -289,6 +292,7 @@ textarea:-ms-input-placeholder  {
 
 .sub-menu > ul a {
   display: inline-block;
+  vertical-align: top;
   padding: 10px 20px;
   box-sizing: border-box;
   width: 100%;
@@ -644,11 +648,10 @@ textarea:-ms-input-placeholder  {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 17px;
   height: 17px;
   margin-right: 8px;
-
-  vertical-align: top;
 
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -736,11 +739,11 @@ textarea:-ms-input-placeholder  {
 }
 
 .raspberries {
-  background: url("../img/raspberries.jpg");
+  background: #66001b url("../img/raspberries.jpg");
 }
 
 .chocolate {
-  background: url("../img/chocolate.jpg");
+  background: #452513 url("../img/chocolate.jpg");
 }
 
 .hits, .catalog {
@@ -758,10 +761,10 @@ textarea:-ms-input-placeholder  {
   position: relative;
 
   display: inline-block;
+  vertical-align: top;
   width: 267px;
   padding: 13px;
 
-  vertical-align: top;
   font-size: 16px;
   border-radius: 5px;
 }
@@ -823,6 +826,7 @@ textarea:-ms-input-placeholder  {
 
 .breadcrumbs li {
   display: inline-block;
+  vertical-align: baseline;
 
   font-size: 14px;
   line-height: 16px;
@@ -994,12 +998,12 @@ textarea:-ms-input-placeholder  {
   content: "";
 
   display: inline-block;
+  vertical-align: middle;
   width: 20px;
   height: 20px;
   margin-right: 10px;
   margin-left: 15px;
 
-  vertical-align: middle;
   box-sizing: border-box;
   border: 1px solid #fff;
   border-radius: 50%;
@@ -1028,12 +1032,12 @@ textarea:-ms-input-placeholder  {
   content: "";
 
   display: inline-block;
+  vertical-align: middle;
   width: 20px;
   height: 20px;
   margin-left: 15px;
   margin-right: 15px;
 
-  vertical-align: middle;
   box-sizing: border-box;
   border-radius: 5px;
   border: 1px solid #fff;
@@ -1152,8 +1156,9 @@ fieldset {
 
 .filters button {
   display: inline-block;
+  vertical-align: top;
   height: 36px;
-  width: 179px;
+  width: 144px;
   box-sizing: border-box;
   margin-left: 15px;
   margin-top: 39px;
@@ -1294,6 +1299,7 @@ fieldset {
 
 .footer-nav li {
   display: inline-block;
+  vertical-align: baseline;
   padding-left: 40px;
 
   font-size: 13px;
@@ -1312,6 +1318,7 @@ fieldset {
 
 .social-btn {
   display: inline-block;
+  vertical-align: top;
   width: 38px;
   height: 38px;
   margin-right: 10px;
