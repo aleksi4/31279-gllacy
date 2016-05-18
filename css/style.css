@@ -1063,25 +1063,35 @@ textarea:-ms-input-placeholder  {
   opacity: 0.4;
 }
 
+.filter-sort::-ms-expand {
+display: none;
+}
 .filter-sort {
-  margin-right: 16px;
-  padding: 7px 15px 8px 15px;
+width: 193px;
+height: 36px;
+margin-right: 16px;
+padding: 7px 30px 9px 17px;
 
-  color: #ffffff;
-  background: rgba(248, 247, 244, 0.2);
-  border: none;
-  border-radius: 20px;
+color: #ffffff;
+background: rgba(248, 247, 244, 0.2) url("../img/select_arrow.png") 169px 16px no-repeat;
+border: none;
+border-radius: 20px;
+
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
 
+/*.filter-sort:focus,*/
 .filter-sort:hover {
-  background: #ffffff;
-  color: #323232;
+background-color: #ffffff;
+background-image: url("../img/select_arrow_dark.png");
+
+color: #323232;
 }
 
 .filter-sort * {
   font-weight: normal;
-
-  color: #000000;
 }
 
 .range {
@@ -1095,7 +1105,6 @@ textarea:-ms-input-placeholder  {
 
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.2);
-  cursor: pointer;
 }
 
 .price-range-line {
@@ -1130,6 +1139,7 @@ textarea:-ms-input-placeholder  {
   background: #fff;
   border-radius: 50%;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .price-range-gap {
