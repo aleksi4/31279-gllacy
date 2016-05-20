@@ -107,7 +107,7 @@ a:hover, a:active {
 }
 
 .btn:hover {
-  color: #fff;
+  color: #ffffff;
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
@@ -132,32 +132,36 @@ h1.catalog-title {
   margin-bottom: 10px;
 }
 
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-header a {
   border: none;
 }
 
 .main-navigation {
+  display: flex;
   margin-top: 22px;
 }
 
 .main-navigation ul {
-  display: inline-block;
-  vertical-align: top;
   margin: 0;
   padding: 0;
+}
 
-  font-size: 0;
+.main-navigation > ul {
+  display: flex;
 
   list-style: none;
 }
 
 .main-navigation > ul > li {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
 }
 
-.main-navigation > ul > li:hover .sub-menu {
+.main-navigation > ul li:hover .sub-menu {
   display: block;
 }
 
@@ -186,11 +190,13 @@ h1.catalog-title {
 }
 
 .main-navigation > ul .active {
+  padding: 7px 14px;
+
   line-height: 18px;
   font-weight: bold;
+
   background-color: #d07058;
   color: #fff;
-  padding: 7px 14px;
   text-decoration: none;
   border-radius: 20px;
 }
@@ -200,13 +206,13 @@ h1.catalog-title {
 }
 
 .logo {
-  display: inline-block;
-  vertical-align: top;
+  /*display: inline-block;
+  vertical-align: top;*/
   margin-top: -12px;
   margin-right: 12px;
   margin-left: -5px;
 
-  font-size: 0;
+  /*font-size: 0;*/
 }
 
 .logo a {
@@ -747,7 +753,8 @@ textarea:-ms-input-placeholder  {
 }
 
 .hits, .catalog {
-  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 12px;
   margin-left: -13px;
   margin-right: -13px;
@@ -760,8 +767,6 @@ textarea:-ms-input-placeholder  {
 .hit-item, .catalog-item {
   position: relative;
 
-  display: inline-block;
-  vertical-align: top;
   width: 267px;
   padding: 13px;
 
