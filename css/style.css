@@ -120,10 +120,6 @@ a:hover, a:active {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.underline {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
 h1.catalog-title {
   font-size: 35px;
   font-weight: bold;
@@ -165,9 +161,8 @@ h1.catalog-title {
   display: block;
 }
 
-.main-navigation > ul a {
-  display: inline-block;
-  vertical-align: top;
+.main-navigation > ul > li {
+  height: 18px;
   padding: 7px 14px;
 
   font-weight: bold;
@@ -178,18 +173,19 @@ h1.catalog-title {
   border-radius: 20px;
 }
 
-.main-navigation > ul a[href]:hover {
+.main-navigation > ul li:hover {
   background: #f7f6f3;
   color: #323232;
   text-decoration: none;
 }
 
-.main-navigation > ul a[href]:active {
+.main-navigation > ul > li:active {
   background-color: #ededed;
   box-shadow: inset 0px 2px 1px 0px #696969;
 }
 
-.main-navigation > ul .active {
+.main-navigation > ul .active,
+.main-navigation > ul .active:hover {
   padding: 7px 14px;
 
   line-height: 18px;
@@ -201,18 +197,24 @@ h1.catalog-title {
   border-radius: 20px;
 }
 
-.main-navigation > ul .active span {
+.main-navigation > ul .active a,
+.main-navigation > ul .active:hover a {
   border: none;
 }
 
+.main-navigation a {
+  color: inherit;
+}
+
+.main-navigation > ul a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .logo {
-  /*display: inline-block;
-  vertical-align: top;*/
   margin-top: -12px;
   margin-right: 12px;
   margin-left: -5px;
 
-  /*font-size: 0;*/
 }
 
 .logo a {
@@ -282,6 +284,7 @@ textarea:-ms-input-placeholder  {
 
 .sub-menu {
   position: absolute;
+  top: 32px;
   z-index: 20;
 
   display: none;
@@ -323,7 +326,7 @@ textarea:-ms-input-placeholder  {
   box-shadow: none;
 }
 
-.sub-menu > ul a.active {
+.sub-menu-active {
   padding: 10px 20px;
 
   font-weight: normal;
@@ -351,17 +354,14 @@ textarea:-ms-input-placeholder  {
 }
 
 .user-block {
+  display: flex;
   margin-top: 23px;
-  font-size: 0;
 
   list-style: none;
 }
 
 .user-block li {
   position: relative;
-
-  display: inline-block;
-  vertical-align: top;
 
   font-size: 14px;
   line-height: 24px;
