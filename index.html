@@ -201,7 +201,10 @@
                  Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
                </p>
               <form action="post">
-                <input type="text" placeholder="Электронная почта" required>
+                <div class="field-wrapper">
+                  <input id="subscribe-email" type="text" placeholder="Электронная почта" required>
+                  <label for="subscribe-email" class="field-wrapper-label">Электронная почта</label>
+                </div>
                 <button type="submit" class="btn">Отправить</button>
               </form>
             </article>

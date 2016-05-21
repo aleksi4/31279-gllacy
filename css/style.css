@@ -276,6 +276,51 @@ textarea:-ms-input-placeholder  {
   color: #999999;
 }
 
+input[type="text"]:focus::-webkit-input-placeholder,
+input[type="password"]:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input[type="text"]:focus::-moz-placeholder,
+input[type="password"]:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input[type="text"]:focus:-ms-input-placeholder,
+input[type="password"]:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder  {
+  color: transparent;
+}
+
+.field-wrapper {
+  position: relative;
+  
+  font-size: 0;
+  line-height: 0;
+}
+
+.field-wrapper-label {
+  position: absolute;
+  left: 14px;
+  top: -15px;
+}
+
+input:valid + .field-wrapper-label,
+textarea:valid + .field-wrapper-label {
+  font-size: 11px;
+  line-height: 13px;
+  color: #999999;
+}
+
+input:focus + .field-wrapper-label,
+textarea:focus + .field-wrapper-label {
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+}
+
 .sub-menu {
   position: absolute;
   z-index: 20;
@@ -930,7 +975,7 @@ textarea:-ms-input-placeholder  {
 }
 
 .subscribe-item {
-  position: relative;
+  /*position: relative;*/
 
   width: 520px;
   height: 180px;
@@ -940,25 +985,25 @@ textarea:-ms-input-placeholder  {
   color: #5a5a5a;
 }
 
-.subscribe-item input {
-  position: absolute;
-  bottom: 36px;
+.subscribe-item form {
+  display: flex;
+  justify-content: space-between;
+}
 
-  width: 340px;
+.subscribe-item input {
+  width: 365px;
   margin-bottom: 0;
 }
 
 .subscribe-item .btn {
-  position: absolute;
-  right: 25px;
-  bottom: 40px;
-
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
 }
 
 .subscribe-desc {
+  margin-bottom: 40px;
+  
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
