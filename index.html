@@ -42,8 +42,11 @@
                 <a class="header-icon header-search" href="#"></a>
                 <div class="search-form">
                   <form action="post">
-                    <input type="text" placeholder="Что ищем?" required>
-                    <button type="submit" name="button"></button>
+                    <div class="field-wrapper">
+                      <input type="text" placeholder="Что ищем?" id="search-form" required>
+                      <label for="search-form" class="field-wrapper-label">Что ищем?</label>
+                    </div>
+                      <button type="submit" name="button"></button>
                   </form>
                 </div>
               </li>
@@ -51,8 +54,14 @@
                 <a class="header-icon header-login" href="#">Вход</a>
                 <div class="login-form">
                   <form action="post" class="clearfix">
-                    <input type="text" placeholder="Электронная почта" required>
-                    <input type="password" placeholder="Пароль" required>
+                    <div class="field-wrapper">
+                      <input type="text" placeholder="Электронная почта" id="header-login-email" required>
+                      <label for="header-login-email" class="field-wrapper-label">Электронная почта</label>
+                    </div>
+                    <div class="field-wrapper">
+                      <input type="password" placeholder="Пароль" id="header-password" required>
+                      <label for="header-password" class="field-wrapper-label">Пароль</label>
+                    </div>
                     <button type="submit" class="btn left">Войти</button>
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
@@ -253,9 +262,18 @@
         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
         <h2 class="modal-content-title">Мы обязательно вам ответим!</h2>
       <form action="post" class="clearfix">
-        <input type="text" name="login" placeholder="Как вас зовут?" required>
-        <input type="text" name="mail" placeholder="Ваша почта для ответа?" required>
-        <textarea name="any-text" placeholder="Напишите что-нибудь..." required></textarea>
+        <div class="field-wrapper">
+          <input type="text" name="login" placeholder="Как вас зовут?" id="modal-content-login" required>
+          <label for="modal-content-login" class="field-wrapper-label">Как вас зовут?</label>
+        </div>
+        <div class="field-wrapper">
+          <input type="text" name="mail" placeholder="Ваша почта для ответа?" id="modal-content-email" required>
+          <label for="modal-content-email" class="field-wrapper-label">Ваша почта для ответа?</label>
+        </div>
+        <div class="field-wrapper">
+          <textarea name="any-text" placeholder="Напишите что-нибудь..." id="modal-content-text" required></textarea>
+          <label for="modal-content-text" class="field-wrapper-label">Напишите что-нибудь...</label>
+        </div>
         <button type="submit" name="button" class="btn right">Отправить</button>
       </form>
     </div>
