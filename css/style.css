@@ -26,8 +26,6 @@ body > input[type="radio"] {
   background-repeat: no-repeat;
   background-position: top center;
 
-  -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
-
   transition: background-image 0.5s ease, background-color 0.5s ease;
 
 }
@@ -101,21 +99,18 @@ a:hover, a:active {
   border: none;
   border-radius: 20px;
   background: #f26843;
-  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
 .btn:hover {
   color: #fff;
-  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
   text-decoration: none;
 }
 
 .btn:active {
-  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
@@ -133,8 +128,10 @@ h1.catalog-title {
 }
 
 .main-header {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .main-header a {
@@ -142,6 +139,7 @@ h1.catalog-title {
 }
 
 .main-navigation {
+  display: -ms-flexbox;
   display: flex;
   margin-top: 22px;
 }
@@ -392,6 +390,7 @@ textarea:focus + .field-wrapper-label {
 }
 
 .user-block {
+  display: -ms-flexbox;
   display: flex;
   margin-top: 23px;
 
@@ -584,7 +583,7 @@ textarea:focus + .field-wrapper-label {
   padding-right: 10px;
 
   border: none;
-  background: url("../img/x.svg") 0 0 no-repeat;*/
+  background: url("../img/x.svg") 0 0 no-repeat;
 }
 
 .cart-form-item-title {
@@ -737,13 +736,14 @@ textarea:focus + .field-wrapper-label {
 }
 
 .inner .site-wrapper {
-  background: #849d8f -webkit-linear-gradient(#9db1a5, #849d8f);
   background: #849d8f linear-gradient(#9db1a5, #849d8f);
 }
 
 .sale {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   margin-bottom: 28px;
 }
 
@@ -791,8 +791,10 @@ textarea:focus + .field-wrapper-label {
 }
 
 .hits, .catalog {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 12px;
   margin-left: -13px;
   margin-right: -13px;
@@ -902,9 +904,12 @@ textarea:focus + .field-wrapper-label {
 }
 
 .features ul {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -936,8 +941,10 @@ textarea:focus + .field-wrapper-label {
 }
 
 .news {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   margin-bottom: 40px;
 }
 
@@ -975,8 +982,6 @@ textarea:focus + .field-wrapper-label {
 }
 
 .subscribe-item {
-  /*position: relative;*/
-
   width: 520px;
   height: 180px;
   padding: 20px;
@@ -986,8 +991,10 @@ textarea:focus + .field-wrapper-label {
 }
 
 .subscribe-item form {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .subscribe-item input {
@@ -1020,17 +1027,12 @@ textarea:focus + .field-wrapper-label {
 }
 
 .filters form {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .filter-title {
@@ -1296,18 +1298,12 @@ fieldset {
 }
 
 .main-footer {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
 
   height: 110px;
 
